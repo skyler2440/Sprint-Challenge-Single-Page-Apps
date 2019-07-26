@@ -1,24 +1,16 @@
-import React from 'react'
-import {Grid, Header,} from 'semantic-ui-react'
+import React from "react";
+import { Card } from "semantic-ui-react";
 
-export default function EpisodeCard (props) {
+export default function EpisodeCard({ name, airDate, episode }) {
   return (
-  // <span>
-  // //   <img src={props.image}/>
-  // //   {props.name}
-  // //   {props.species}
-  // //   {props.status}
-  // //   {/* {props.location} */}
-  // //   {props.orgin}</span>
-  <Grid>
-    <Grid.Row>
-      <Grid.Column>
-        <Header as='h2'>{props.name}</Header>
-        <p>Air Date: {props.airDate}</p>
-        <p>Episode: {props.episode}</p>
-        {/* {props.characters} */}
-      </Grid.Column>
-     
-    </Grid.Row>
-  </Grid>
-  )}
+    <Card>
+      <Card.Content>
+        <Card.Header>{name}</Card.Header>
+        <Card.Description>
+          <h3>{airDate}</h3>
+          {episode}
+        </Card.Description>
+      </Card.Content>
+    </Card>
+  );
+}

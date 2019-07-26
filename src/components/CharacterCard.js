@@ -1,26 +1,29 @@
-import React from 'react'
-import {Grid, Header, Image, Icon} from 'semantic-ui-react'
+import React from "react";
+import { Image, Icon, Card } from "semantic-ui-react";
 
-export default function CharacterCard ({image, name, species, status, origin}) {
-  
-
+export default function CharacterCard({
+  image,
+  name,
+  species,
+  status,
+  origin
+}) {
   return (
-  // <span>
-  // //   <img src={image}/>
-  // //   {name}
-  // //   {species}
-  // //   {status}
-  // //   {/* {location} */}
-  // //   {orgin}</span>
-  <Grid columns={1} >
-    
-      <Grid.Column>
-        <Image className = 'card-image'src={image}/>
-        <Header as='h2'>{name}</Header>
-      {species} {status}
-       <p>Origin: {origin}</p>
-       <Icon name="user"></Icon>Characters
-      </Grid.Column>
-     
-  </Grid>
-  )}
+    <Card>
+      <Card.Content>
+        <Card.Header>
+          <Image src={image} />
+        </Card.Header>
+        <Card.Description>
+          <h1>{name}</h1>
+          {species} {status}
+          <p>{origin}</p>
+        </Card.Description>
+      </Card.Content>
+      <Card.Content extra align="right">
+        <Icon name="user" />
+        Characters
+      </Card.Content>
+    </Card>
+  );
+}
