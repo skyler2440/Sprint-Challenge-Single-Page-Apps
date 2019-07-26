@@ -7,9 +7,9 @@ export default function EpisodeList() {
   useEffect(() => {
     axios.get(`https://rickandmortyapi.com/api/episode/`).then(res => {
       const episode =  res.data.results
-      console.log("r&M data:", res.data.results);
+      console.log("episode data:", res.data.results);
       // KEY PART, SAVE TO STATE:
-    //   setEpisode(episode);
+      setEpisode(episode);
     });
   }, []);
 
@@ -18,7 +18,11 @@ export default function EpisodeList() {
       // console.log(res)
       return(
         <EpisodeCard 
-       
+        key={res.id}
+       name={res.name}
+       airDate={res.air_date}
+        episode={res.episode}
+        characters={res.characters}
         />
       )
     })}

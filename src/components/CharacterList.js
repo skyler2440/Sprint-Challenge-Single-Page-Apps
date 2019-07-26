@@ -24,7 +24,7 @@ export default function CharacterList() {
         species= {res.species}
         status = {res.status}
         location = {res.location}
-        origin = {res.origin}
+        origin = {res.origin.name}
         />
       )
     })}
