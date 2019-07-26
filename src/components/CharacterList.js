@@ -26,8 +26,9 @@ export default function CharacterList() {
         location = {res.location}
         origin = {res.origin.name}
         />
-      )
-    })}
+        )
+      })}
+                                
     </section>
 
 }

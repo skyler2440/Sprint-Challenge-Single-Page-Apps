@@ -21,8 +21,8 @@ export default function LocationsList() {
         key = {res.id}
         name = {res.name}
         type= {res.type}
-        dimension= {res.demension}
-        residents = {res.residents}
+        dimension= {res.dimension}
+        residents = {res.residents.length}
         />
       )
     })}
