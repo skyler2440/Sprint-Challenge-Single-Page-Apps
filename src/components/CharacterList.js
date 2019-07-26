@@ -23,6 +23,8 @@ export default function CharacterList() {
         image= {res.image}
         species= {res.species}
         status = {res.status}
+        location = {res.location}
+        origin = {res.origin}
         />
       )
     })}
