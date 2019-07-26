@@ -20,9 +20,9 @@ export default function CharacterCard({
           <p>{origin}</p>
         </Card.Description>
       </Card.Content>
-      <Card.Content extra align="right">
+      <Card.Content extra>
         <Icon name="user" />
-        Characters
+        Episodes
       </Card.Content>
     </Card>
   );
