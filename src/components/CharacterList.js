@@ -21,6 +21,8 @@ export default function CharacterList() {
         key = {res.id}
         name = {res.name}
         image= {res.image}
+        species= {res.species}
+        status = {res.status}
         />
       )
     })}
