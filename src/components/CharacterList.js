@@ -15,7 +15,7 @@ export default function CharacterList() {
 
   return <section className='character-list grid-view'>
     {character.map(res => {
-      console.log(res)
+      // console.log(res)
       return(
         <CharacterCard 
         key = {res.id}
