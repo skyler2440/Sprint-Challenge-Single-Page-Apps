@@ -7,7 +7,7 @@ export default function CharacterList() {
   useEffect(() => {
     axios.get(`https://rickandmortyapi.com/api/character/`).then(res => {
       const character = res.data.results;
-      console.log("r&M data:", res.data.results);
+      console.log("r&M data:", res.data);
       // KEY PART, SAVE TO STATE:
       setCharacter(character);
     });

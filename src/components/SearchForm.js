@@ -21,4 +21,5 @@ export default function SearchForm({ onSearch }) {
       </form>
     </section>
   );
-}
+  }
+
